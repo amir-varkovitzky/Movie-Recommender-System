@@ -3,6 +3,7 @@
 This repository contains code for a movie recommender system implemented in Python. The system is capable of recommending movies to users based on their preferences and past ratings.
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
@@ -13,7 +14,7 @@ This repository contains code for a movie recommender system implemented in Pyth
 
 ## Introduction
 
-The movie recommender system employs collaborative filtering techniques to suggest movies to users based on their historical ratings and preferences. It utilizes a dataset of movie ratings provided by users and leverages machine learning algorithms to make personalized recommendations.
+The movie recommender system employs collaborative filtering techniques to suggest movies to users based on their historical ratings and preferences. It utilizes the MovieLens dataset (ml-latest-small), which contains 100,836 ratings and 3,683 tag applications across 9,742 movies, collected from users on MovieLens, a movie recommendation service, and leverages machine learning algorithms to make personalized recommendations.
 
 ## Features
 
@@ -27,19 +28,30 @@ The movie recommender system employs collaborative filtering techniques to sugge
 ## Installation
 
 1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/amir-varkovitzky/Recommender-System.git
    ```
-   git clone https://github.com/your_username/movie-recommender-system.git
-   ```
-2. Install the required dependencies:
-   ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd recommender-system
+    ```
+
+3. Install the required dependencies:
+
+   ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage
 
-1. Open the notebook `movie_recommender_system.ipynb` in your Jupyter Notebook environment.
-2. Follow the instructions provided in the notebook to load the movie ratings data, train the recommendation model, and make movie predictions.
-3. Experiment with different parameters, search queries, and evaluation metrics as needed.
+1. Open the notebook `recommender-notebook.ipynb` in your Jupyter Notebook environment.
+2. Begin by reviewing the prewritten ratings for popular movies. You can either use these ratings as they are, modify them to match your preferences, or delete them entirely.
+3. Use the interactive widget to search for any movie you like. Once you've found the desired movie, select it from the dropdown menu, rate it using the slider, and submit your rating.
+4. Follow the instructions provided in the notebook to load the movie ratings data, train the recommendation model, and make movie predictions.
+5. Experiment with different parameters, search queries, and evaluation metrics as needed.
 
 ## Examples
 
@@ -69,7 +81,7 @@ mae_for_all_users = calculate_mae_for_all_users(predictions, targets, mask)
 
 ## Contributing
 
-Contributions to the project are welcome. If you have suggestions for improvements, please open an issue or submit a pull request.
+Contributions to the project are welcome. If you have suggestions for improvements, please open an issue or submit a pull request. Some ideas for contributions include updating the movie_recommender.py according to the notebook, writing the GUI, or anything else that comes to mind.
 
 ## License
 
